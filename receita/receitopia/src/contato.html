@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Receitopia</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <a href="../src/index.html" class="logo-container">
+        <img src="../img/logo.png" alt="Logo Receitopia" />
+      </a>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="../src/index.html" >Home</a></li>
+          <li><a href="../src/Receitas.html">Receitas</a></li>
+          <li><a href="../src/sobre.html">Sobre</a></li>
+          <li><a href="../src/contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contato-container" aria-label="Formulário de contato">
+      <h2>Fale Conosco</h2>
+      <form id="formContato" class="form-contato" autocomplete="on" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+        <p id="mensagemFeedback" class="mensagem-feedback" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Receitopia • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

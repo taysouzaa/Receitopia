@@ -1,0 +1,369 @@
+
+/*------------------------------------------------------/ 
+/* -------------------------
+   TÍTULOS
+------------------------- */
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* -------------------------
+   CARDS DE RECEITA
+------------------------- */
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recipe-card h3 {
+    font-size: 1.1rem;
+    margin: 10px;
+    min-height: 60px;
+}
+
+.recipe-card p {
+    margin: 0 10px 10px;
+    font-size: 0.95rem;
+}
+
+.recipe-card .btn {
+    margin: 10px;
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.recipe-card .btn:hover {
+    background-color: #e64a19;
+    border-color: #d84315;
+}
+
+/* -------------------------
+   SEÇÃO DE NEWSLETTER
+------------------------- */
+section.text-center {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+section.text-center h2 {
+    margin-bottom: 10px;
+}
+
+section.text-center form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------
+   RESPONSIVO
+------------------------- */
+@media (max-width: 768px) {
+    .recipe-card h3 {
+        font-size: 1rem;
+    }
+
+    section.text-center form {
+        flex-direction: column;
+    }
+
+    section.text-center input,
+    section.text-center button {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}
+
+.receitas-container {
+  background: #fff;
+  max-width: 1100px;
+  width: 100%;
+  margin: 40px auto 60px;
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 32px rgba(21,59,109,0.10);
+  animation: fadeIn 0.7s;
+}
+
+.receitas-container h2 {
+  text-align: center;
+  color: #153b6d;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.receitas-container h2 span {
+  color: #3b69a4;
+  font-weight: 800;
+}
+
+.receitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.receita-card {
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(21,59,109,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.receita-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 24px rgba(21,59,109,0.15);
+}
+
+.receita-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.receita-card h3 {
+  font-size: 1.25rem;
+  margin: 12px;
+  color: #153b6d;
+}
+
+.receita-card p {
+  font-size: 1rem;
+  margin: 0 12px 12px;
+  color: #444;
+}
+
+.btn-ver {
+  display: inline-block;
+  margin: 0 12px 16px;
+  padding: 8px 16px;
+  background: #3b69a4;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-ver:hover {
+  background: #2655ad;
+}
+
+/* === Reset e base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === Header === */
+header {
+  background-color: #e8f0fe;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+}
+
+.header-flex {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  height: 110px;
+}
+
+
+/* === Navegação === */
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+nav a:hover,
+nav a.active,
+nav a[aria-current="page"] {
+  background-color: #ef6c57;
+}
+
+/* === Main - Sobre === */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.sobre-vovo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3b69a4;
+}
+
+.sobre-vovo h2 span {
+  color: #ef6c57;
+}
+
+.sobre-vovo p {
+  margin-bottom: 1rem;
+}
+
+.sobre-vovo ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.sobre-vovo ul li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+/* === Footer === */
+footer {
+  background-color: #e8f0fe;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.mensagem-feedback {
+  margin-top: 0.7rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* === Estilos para o formulário de contato (adaptado para .form-contato) === */
+.form-contato {
+    background: #fff;
+    max-width: 500px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(21, 59, 109, 0.10);
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #153b6d;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.form-contato textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-contato button {
+    background: linear-gradient(90deg, #3b69a4 60%, #153b6d 100%);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.08rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.18s;
+}
+
+.form-contato button:hover {
+    background: linear-gradient(90deg, #1e4f95 60%, #3b69a4 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* === Alerta visual de input inválido === */
+.input-alert {
+    border: 2px solid #e74c3c !important;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
+}

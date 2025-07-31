@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escondidinho de Carne | Receitopia</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+  /* === Container Principal da Receita === */
+  .receita-container {
+    background-color: #fff;
+    max-width: 680px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(21, 59, 109, 0.10);
+    animation: fadeIn 0.7s ease;
+  }
+
+  /* === Título e Introdução === */
+  .receita-container h1 {
+    text-align: center;
+    color: #153b6d;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  /* === Imagem da Receita === */
+  .receita-container img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(59, 105, 164, 0.10);
+  }
+
+  /* === Informações da Receita === */
+  .receita-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.98rem;
+    color: #3b69a4;
+    margin-bottom: 1.5rem;
+  }
+
+  /* === Listas === */
+  section ul,
+  section ol {
+    margin: 0 0 1.5rem 1rem;
+    padding-left: 1rem;
+    color: #333;
+  }
+
+  section ul li,
+  section ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  /* === Subtítulos das Seções === */
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #3b69a4;
+    border-bottom: 2px solid #e3ecfa;
+    padding-bottom: 0.4rem;
+  }
+
+  /* === Dica Especial === */
+  .dica {
+    background-color: #e3ecfa;
+    border-left: 4px solid #3b69a4;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #2655ad;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  /* === Navegação entre Receitas (Anterior, Início, Próxima) === */
+.navegacao-receita {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.navegacao-receita a {
+  padding: 0.8rem 1.6rem;
+  background: #3b69a4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navegacao-receita a:hover {
+  background: #2655ad;
+  transform: translateY(-2px);
+}
+
+.navegacao-receita a:focus {
+  outline: 2px solid #153b6d;
+}
+
+  /* === Navegação entre Receitas === */
+  .navegacao-receita {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .navegacao-receita a.btn-ver {
+    margin: 0 0.5rem;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* === Responsivo === */
+  @media (max-width: 768px) {
+    .receita-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .receita-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.8rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <a href="../src/index.html" class="logo-container">
+        <img src="../img/logo.png" alt="Logo Receitopia" />
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="../src/index.html" >Home</a></li>
+          <li><a href="../src/Receitas.html" aria-current="page">Receitas</a></li>
+          <li><a href="../src/sobre.html">Sobre</a></li>
+          <li><a href="../src/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="receita-container" aria-labelledby="titulo-receita">
+      <h2 id="titulo-receita">Escondidinho de Carne</h2>
+      <div class="receita-info">
+        <span>⏱️ Preparo: 50 min</span>
+        <span>🍽️ Rende: 6 porções</span>
+        <span>🥣 Nível: Médio</span>
+      </div>
+      <p>O escondidinho de carne seca é um prato típico brasileiro, perfeito para reunir a família e surpreender no sabor!</p>
+      <section>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li>500g de carne seca desfiada</li>
+          <li>1kg de mandioca</li>
+          <li>2 colheres de sopa de manteiga</li>
+          <li>1 cebola picada</li>
+          <li>2 dentes de alho picados</li>
+          <li>2 xícaras de leite</li>
+          <li>100g de queijo parmesão ralado</li>
+          <li>Sal e pimenta a gosto</li>
+          <li>Cheiro-verde para finalizar</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Cozinhe a mandioca até ficar macia. Escorra e amasse até virar purê.</li>
+          <li>Em uma panela, derreta a manteiga e refogue a cebola e o alho até dourar. Acrescente a carne seca desfiada, tempere com sal e pimenta e refogue por mais 3 minutos.</li>
+          <li>Adicione o leite ao purê de mandioca, misture bem até ficar cremoso e ajuste o sal.</li>
+          <li>Em um refratário, faça uma camada com metade do purê, espalhe o recheio de carne seca e cubra com o restante do purê.</li>
+          <li>Polvilhe o queijo parmesão por cima e leve ao forno preaquecido a 180°C por cerca de 20 minutos ou até dourar.</li>
+          <li>Finalize com cheiro-verde e sirva quente.</li>
+        </ol>
+      </section>
+      <div class="dica">
+        <strong>Dica:</strong> Experimente substituir a carne seca por frango desfiado ou carne moída para variar o recheio!
+      </div>
+      <div class="navegacao-receita">
+          <a href="../pages/coxinha.html" aria-label="Receita anterior: Coxinha">←Receita Anterior</a>
+          <a href="../pages/espaguete.html" aria-label="Próxima receita: Macarrão">Próxima Receita→</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Receitopia • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

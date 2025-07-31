@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coxinha de Frango | Receitopia</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+  /* === Container Principal da Receita === */
+  .receita-container {
+    background-color: #fff;
+    max-width: 680px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(21, 59, 109, 0.10);
+    animation: fadeIn 0.7s ease;
+  }
+
+  /* === Título e Introdução === */
+  .receita-container h1 {
+    text-align: center;
+    color: #153b6d;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  /* === Imagem da Receita === */
+  .receita-container img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(59, 105, 164, 0.10);
+  }
+
+  /* === Informações da Receita === */
+  .receita-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.98rem;
+    color: #3b69a4;
+    margin-bottom: 1.5rem;
+  }
+
+  /* === Listas === */
+  section ul,
+  section ol {
+    margin: 0 0 1.5rem 1rem;
+    padding-left: 1rem;
+    color: #333;
+  }
+
+  section ul li,
+  section ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  /* === Subtítulos das Seções === */
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #3b69a4;
+    border-bottom: 2px solid #e3ecfa;
+    padding-bottom: 0.4rem;
+  }
+
+  /* === Dica Especial === */
+  .dica {
+    background-color: #e3ecfa;
+    border-left: 4px solid #3b69a4;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #2655ad;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  /* === Navegação entre Receitas (Anterior, Início, Próxima) === */
+.navegacao-receita {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.navegacao-receita a {
+  padding: 0.8rem 1.6rem;
+  background: #3b69a4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navegacao-receita a:hover {
+  background: #2655ad;
+  transform: translateY(-2px);
+}
+
+.navegacao-receita a:focus {
+  outline: 2px solid #153b6d;
+}
+
+  /* === Navegação entre Receitas === */
+  .navegacao-receita {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .navegacao-receita a.btn-ver {
+    margin: 0 0.5rem;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* === Responsivo === */
+  @media (max-width: 768px) {
+    .receita-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .receita-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.8rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <a href="../src/index.html" class="logo-container">
+        <img src="../img/logo.png" alt="Logo Receitopia" />
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="../src/index.html" >Home</a></li>
+          <li><a href="../src/Receitas.html" aria-current="page">Receitas</a></li>
+          <li><a href="../src/sobre.html">Sobre</a></li>
+          <li><a href="../src/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="receita-container" aria-labelledby="titulo-receita">
+      <h2 id="titulo-receita">Coxinha de Frango</h2>
+      <div class="receita-info">
+        <span>⏱️ Preparo: 1h</span>
+        <span>🍽️ Rende: 25 unidades</span>
+        <span>🥣 Nível: Médio</span>
+      </div>
+      <p>A coxinha de frango é um dos salgados mais amados do Brasil! Aprenda a fazer em casa, com massa macia e recheio suculento.</p>
+      <section>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li>1 peito de frango cozido e desfiado</li>
+          <li>2 xícaras de caldo de frango</li>
+          <li>2 xícaras de farinha de trigo</li>
+          <li>1 cebola picada</li>
+          <li>2 dentes de alho picados</li>
+          <li>2 colheres (sopa) de manteiga</li>
+          <li>Sal e pimenta a gosto</li>
+          <li>Salsinha picada a gosto</li>
+          <li>Requeijão cremoso (opcional, para rechear)</li>
+          <li>Farinha de rosca para empanar</li>
+          <li>2 ovos batidos</li>
+          <li>Óleo para fritar</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Refogue a cebola e o alho na manteiga. Acrescente o frango desfiado, tempere com sal, pimenta e salsinha. Reserve.</li>
+          <li>Em uma panela, ferva o caldo de frango com uma pitada de sal. Adicione a farinha de trigo de uma vez, mexendo até formar uma massa que solte do fundo.</li>
+          <li>Espere amornar e sove a massa até ficar lisa.</li>
+          <li>Abra pequenas porções de massa na mão, recheie com o frango (e requeijão, se desejar), modele em formato de coxinha e feche bem.</li>
+          <li>Passe as coxinhas nos ovos batidos e depois na farinha de rosca.</li>
+          <li>Frite em óleo quente até dourar. Escorra em papel-toalha e sirva.</li>
+        </ol>
+      </section>
+      <div class="dica">
+        <strong>Dica:</strong> Para uma coxinha ainda mais cremosa, coloque um pouco de requeijão junto ao recheio de frango!
+      </div>
+      <div class="navegacao-receita">
+        <a href="../pages/lasanha.html" aria-label="Receita anterior: Lasanha">← Receita Anterior</a>
+        <a href="../pages/escondidinho.html" aria-label="Próxima receita:escondidinho">Próxima Receita →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Receitopia • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
