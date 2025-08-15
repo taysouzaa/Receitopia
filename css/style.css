@@ -367,3 +367,32 @@ footer {
     border: 2px solid #e74c3c !important;
     box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
 }
+
+
+------ 
+
+/* Estilo padrão para desktop */
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  nav a {
+    padding: 10px;
+  }
+}
+
