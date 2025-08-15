@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaguete ao Alho e Óleo | Receitopia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+  /* === Container Principal da Receita === */
+  .receita-container {
+    background-color: #fff;
+    max-width: 680px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(21, 59, 109, 0.10);
+    animation: fadeIn 0.7s ease;
+  }
+
+  /* === Título e Introdução === */
+  .receita-container h1 {
+    text-align: center;
+    color: #153b6d;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  /* === Imagem da Receita === */
+  .receita-container img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(59, 105, 164, 0.10);
+  }
+
+  /* === Informações da Receita === */
+  .receita-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.98rem;
+    color: #3b69a4;
+    margin-bottom: 1.5rem;
+  }
+
+  /* === Listas === */
+  section ul,
+  section ol {
+    margin: 0 0 1.5rem 1rem;
+    padding-left: 1rem;
+    color: #333;
+  }
+
+  section ul li,
+  section ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  /* === Subtítulos das Seções === */
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #3b69a4;
+    border-bottom: 2px solid #e3ecfa;
+    padding-bottom: 0.4rem;
+  }
+
+  /* === Dica Especial === */
+  .dica {
+    background-color: #e3ecfa;
+    border-left: 4px solid #3b69a4;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #2655ad;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  /* === Navegação entre Receitas (Anterior, Início, Próxima) === */
+.navegacao-receita {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.navegacao-receita a {
+  padding: 0.8rem 1.6rem;
+  background: #3b69a4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navegacao-receita a:hover {
+  background: #2655ad;
+  transform: translateY(-2px);
+}
+
+.navegacao-receita a:focus {
+  outline: 2px solid #153b6d;
+}
+
+  /* === Navegação entre Receitas === */
+  .navegacao-receita {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .navegacao-receita a.btn-ver {
+    margin: 0 0.5rem;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* === Responsivo === */
+  @media (max-width: 768px) {
+    .receita-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .receita-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.8rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <a href="../src/index.html" class="logo-container">
+        <img src="../img/logo.png" alt="Logo Receitopia" />
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="../src/index.html" >Home</a></li>
+          <li><a href="../src/Receitas.html" aria-current="page">Receitas</a></li>
+          <li><a href="../src/sobre.html">Sobre</a></li>
+          <li><a href="../src/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="receita-container" aria-labelledby="titulo-receita">
+      <h2 id="titulo-receita">Espaguete ao Alho e Óleo</h2>
+      <div class="receita-info">
+        <span>⏱️ Preparo: 20 min</span>
+        <span>🍽️ Rende: 2 porções</span>
+        <span>🥣 Nível: Muito fácil</span>
+      </div>
+      <p>Um clássico da culinária italiana, simples, rápido e delicioso. Ideal para qualquer ocasião!</p>
+      <section>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li>250g de espaguete</li>
+          <li>3 dentes de alho fatiados</li>
+          <li>4 colheres (sopa) de azeite de oliva</li>
+          <li>Sal a gosto</li>
+          <li>Pimenta-do-reino e salsinha (opcional)</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Cozinhe o espaguete em água fervente com sal até ficar al dente. Escorra e reserve.</li>
+          <li>Aqueça o azeite em uma frigideira grande e doure o alho em fogo baixo, sem queimar.</li>
+          <li>Junte o espaguete escorrido à frigideira e misture bem para envolver toda a massa no azeite e alho.</li>
+          <li>Finalize com pimenta-do-reino e salsinha picada a gosto. Sirva imediatamente.</li>
+        </ol>
+      </section>
+      <div class="dica">
+        <strong>Dica:</strong> Experimente adicionar um toque de queijo parmesão ralado na hora para realçar o sabor!
+      </div>
+        <div class="navegacao-receita">
+            <a href="../src/index.html" aria-label="Voltar para o início">Home</a>
+            <a href="../pages/escondidinho.html" aria-label="Receita anterior: Escondidinho">←Receita Anterior</a>
+        </div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 Receitopia • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
