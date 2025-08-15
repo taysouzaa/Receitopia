@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------/ 
 /* -------------------------
    TÍTULOS
@@ -243,7 +242,6 @@ header {
   height: 110px;
 }
 
-
 /* === Navegação === */
 nav ul {
   display: flex;
@@ -368,9 +366,6 @@ footer {
     box-shadow: 0 0 8px rgba(231, 76, 60, 0.5);
 }
 
-
------- 
-
 /* Estilo padrão para desktop */
 .container {
   width: 800px;
@@ -395,4 +390,3 @@ footer {
     padding: 10px;
   }
 }
-
