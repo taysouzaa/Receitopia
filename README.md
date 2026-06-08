@@ -1,89 +1,57 @@
-# 🍽️ RECEITOPIA
+# Receitopia
 
-Inspire-se, cozinhe e compartilhe sabores inesquecíveis.
+> Plataforma web de receitas culinárias com navegação por categorias, buscador e páginas dedicadas por receita.
 
-[![last commit](https://img.shields.io/github/last-commit/taysouzaa/Receitopia)](https://github.com/taysouzaa/Receitopia)
-[![HTML](https://img.shields.io/badge/html-60%25-orange)]()
-[![CSS](https://img.shields.io/badge/css-30%25-blue)]()
-[![JavaScript](https://img.shields.io/badge/javascript-10%25-yellow)]()
+![Status](https://img.shields.io/badge/status-concluído-22c55e)
+![Frontend](https://img.shields.io/badge/frontend-HTML%2FCSS%2FJS-1f6feb)
+![Tipo](https://img.shields.io/badge/tipo-aplicação%20web-f59e0b)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Construído com as ferramentas e tecnologias:  
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=fff)  
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=fff)  
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000)
+## Visão do Projeto
 
----
+O **Receitopia** é uma aplicação web de receitas culinárias que oferece navegação fluida por categorias, buscador integrado e páginas detalhadas para cada receita. Interface limpa e responsiva, construída inteiramente com tecnologias web nativas.
 
-## 🧠 Visão geral
+### O que o sistema resolve
 
-O **Receitopia** é um site de receitas culinárias feito com foco em usabilidade e visual minimalista.  
-Ele permite explorar receitas com descrição completa, além de contar com páginas organizadas, validação de formulário e uma identidade visual personalizada.
+- Centraliza receitas com categorização e busca rápida.
+- Apresenta cada receita em página própria com ingredientes e modo de preparo.
+- Funciona sem backend — deploy estático e direto.
 
----
+## O Que Foi Desenvolvido
 
-### 🍴 Por que Receitopia?
+### 1. Páginas e Navegação
+- Página inicial com destaques e categorias.
+- Sistema de páginas individuais por receita (`pages/`).
+- Buscador client-side para filtrar receitas.
 
-Este projeto tem como objetivo proporcionar uma experiência agradável tanto para quem ama cozinhar quanto para quem está aprendendo. Os principais recursos incluem:
+### 2. Interface Visual
+- Layout responsivo com HTML5 e CSS3.
+- Imagens organizadas na pasta `img/`.
+- Estilo consistente em todas as páginas.
 
-- 📖 *Receitas completas*: ingredientes, modo de preparo e imagem ilustrativa.
-- 🔄 *Navegação intuitiva*: botões de próxima receita, anterior e voltar ao início.
-- 🧾 *Formulário de contato funcional*: com validação em JavaScript e mensagens personalizadas.
-- 💡 *Design responsivo*: adaptado para dispositivos móveis e desktops.
-- 🎨 *Logo e favicon personalizados*: com identidade visual própria.
+### 3. Documentação
+- Pasta `docs/` com anotações e materiais de apoio.
 
----
+## Stack Técnica
 
-## 📦 Pré-requisitos
+- **Frontend:** HTML5, CSS3, JavaScript (vanilla)
+- **Deploy:** Hospedagem estática
 
-Para visualizar e testar o projeto localmente, você precisa apenas de um navegador atualizado.  
-Nenhuma instalação de dependência é necessária.
+## Estrutura do Projeto
 
----
-
-## 🚀 Como usar
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/taysouzaa/Receitopia
-````
-
-2. Navegue até o diretório do projeto:
-
-```bash
-cd Receitopia
+```text
+.
+├─ index.html         ← página inicial
+├─ pages/             ← páginas individuais de receitas
+├─ img/               ← imagens das receitas
+├─ docs/              ← documentação e anotações
+└─ style.css          ← estilos globais
 ```
 
-3. Abra o arquivo `index.html` no navegador:
+## Como Executar
 
-* Clique duas vezes no arquivo
-  **ou**
-* Use uma extensão como *Live Server* no VS Code
+Abra `index.html` diretamente no navegador ou sirva com qualquer servidor estático.
 
----
+## Licença
 
-## ✅ Status do Projeto
-
-✔ Finalizado e funcionando localmente
-
----
-
-## 📝 Licença
-
-Este projeto está protegido por uma **Licença MIT adaptada**.
-É **proibida a publicação ou redistribuição como se fosse de autoria própria sem autorização da criadora**.
-
----
-
-## 🙋‍♀️ Autora
-
-**Taynara Correia de Souza**
-🎓 Estudante de Técnico em Desenvolvimento de Sistemas
-🔗 [GitHub - @taysouzaa](https://github.com/taysouzaa)
-
----
-
-> “Desenvolvido com carinho, código e um toque de sabor.” 🍓
-
-
-
+MIT — veja [LICENSE](./LICENSE)
