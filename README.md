@@ -7,7 +7,9 @@
 ![Tipo](https://img.shields.io/badge/tipo-aplicação%20web-f59e0b)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Visão do Projeto
+> **Estado:** ativo · **Última revisão:** 2026-08-10
+
+## Visão geral
 
 O **Receitopia** é uma aplicação web de receitas culinárias que oferece navegação fluida por categorias, buscador integrado e páginas detalhadas para cada receita. Interface limpa e responsiva, construída inteiramente com tecnologias web nativas.
 
@@ -17,7 +19,7 @@ O **Receitopia** é uma aplicação web de receitas culinárias que oferece nave
 - Apresenta cada receita em página própria com ingredientes e modo de preparo.
 - Funciona sem backend — deploy estático e direto.
 
-## O Que Foi Desenvolvido
+## O que foi desenvolvido
 
 ### 1. Páginas e Navegação
 - Página inicial com destaques e categorias.
@@ -32,12 +34,12 @@ O **Receitopia** é uma aplicação web de receitas culinárias que oferece nave
 ### 3. Documentação
 - Pasta `docs/` com anotações e materiais de apoio.
 
-## Stack Técnica
+## Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (vanilla)
 - **Deploy:** Hospedagem estática
 
-## Estrutura do Projeto
+## Estrutura do projeto
 
 ```text
 .
@@ -48,7 +50,7 @@ O **Receitopia** é uma aplicação web de receitas culinárias que oferece nave
 └─ style.css          ← estilos globais
 ```
 
-## Como Executar
+## Rodar local
 
 Abra `index.html` diretamente no navegador ou sirva com qualquer servidor estático.
 
