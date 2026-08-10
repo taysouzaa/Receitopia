@@ -7,6 +7,8 @@
 ![Tipo](https://img.shields.io/badge/tipo-aplicação%20web-f59e0b)
 ![Licença](https://img.shields.io/badge/licença-proprietária-red)
 
+🌐 **[Ver aplicação ao vivo](https://receitopia.vercel.app/)** · 📁 **[Repositório GitHub](https://github.com/taysouzaa/Receitopia)**
+
 > **Estado:** ativo · **Última revisão:** 2026-08-10
 
 ## Visão geral
@@ -43,11 +45,17 @@ O **Receitopia** é uma aplicação web de receitas culinárias que oferece nave
 
 ```text
 .
-├─ index.html         ← página inicial
-├─ pages/             ← páginas individuais de receitas
-├─ img/               ← imagens das receitas
-├─ docs/              ← documentação e anotações
-└─ style.css          ← estilos globais
+├─ index.html      ← página inicial
+├─ src/            ← demais páginas do site (Receitas, sobre, contato)
+├─ pages/          ← uma página por receita (8 receitas)
+├─ css/
+│  └─ style.css    ← estilos globais
+├─ js/
+│  └─ script.js    ← busca e interações
+├─ img/            ← fotos das receitas
+├─ docs/           ← cópias de apoio (readme e licença)
+├─ Lasanha.jpg     ← imagem na raiz, fora de img/
+└─ LICENSE
 ```
 
 ## Rodar local
